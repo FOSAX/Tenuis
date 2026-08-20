@@ -385,7 +385,7 @@ Download the archive for your platform from the [Releases page](../../releases):
 |----------|---------|
 | Linux x86_64 | `tenuis-linux-x86_64.tar.gz` |
 | macOS Apple Silicon | `tenuis-macos-arm64.tar.gz` |
-| macOS Intel | `tenuis-macos-x86_64.tar.gz` |
+| macOS Intel | use the arm64 archive via Rosetta 2 |
 
 ```bash
 tar xzf tenuis-linux-x86_64.tar.gz

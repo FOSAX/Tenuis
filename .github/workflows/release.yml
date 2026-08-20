@@ -15,8 +15,6 @@ jobs:
             artifact: tenuis-linux-x86_64
           - os: macos-latest
             artifact: tenuis-macos-arm64
-          - os: macos-13
-            artifact: tenuis-macos-x86_64
 
     runs-on: ${{ matrix.os }}
 
