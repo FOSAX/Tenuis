@@ -1,0 +1,5 @@
+// arith.ten — arithmetic expression
+// Computes (3 + 4) * 2 - 1 = 13, emits byte 13, halts.
+
+3 4 + 2 * 1 - .
+_

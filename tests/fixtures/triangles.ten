@@ -1,0 +1,14 @@
+// triangles.ten — triangular numbers T(1)..T(10) via loop
+// T(n) = n*(n+1)/2  →  1, 3, 6, 10, 15, 21, 28, 36, 45, 55
+// Demonstrates: nested arithmetic, loop with forward and backward jumps.
+
+1
+:loop
+  $ $ 1 + * 2 /    // ( n -- n  T(n) )
+  .                // emit T(n), stack: ( n )
+  $ 10 <           // ( n  n<10 )
+  ?end
+  1 +              // ( n+1 )
+  #loop
+:end
+, _

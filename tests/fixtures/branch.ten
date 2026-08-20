@@ -1,0 +1,12 @@
+// branch.ten — conditional branching
+// if 5 > 3, emit 'Y' (89); else emit 'N' (78).
+// Demonstrates: comparison, JZ (forward), JMP (forward).
+
+5 3 >
+?else
+89 .
+#end
+:else
+78 .
+:end
+_

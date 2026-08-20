@@ -1,0 +1,2 @@
+// Push literal 0x41 ('A'), write to port 0 via WRITE_PORT, halt.
+65 W0 _

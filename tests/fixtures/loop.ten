@@ -1,0 +1,13 @@
+// loop.ten — counted loop
+// Emits bytes 65..69 ('A'..'E').
+// Demonstrates: backward jump (JMP), forward jump (JZ), DUP, INC, LT.
+
+65
+:loop
+  $ .         // dup counter; emit it
+  1 +         // increment counter
+  $ 70 <      // is counter < 70?  (→1 while A..E, →0 when counter reaches 70)
+  ?end        // exit loop when counter >= 70
+  #loop
+:end
+, _           // drop remaining counter; halt

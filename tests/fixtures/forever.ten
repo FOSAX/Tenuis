@@ -1,0 +1,2 @@
+// Infinite loop — used to test budget enforcement.
+:loop #loop

@@ -1,0 +1,12 @@
+// sumto.ten — subroutine call
+// Computes sum_to(5) = 5*(5+1)/2 = 15, emits byte 15, halts.
+// Demonstrates: CALL, RET, subroutine defined after the call site.
+
+5 (sum_to) .
+_
+
+:sum_to       // ( n -- n*(n+1)/2 )
+  $ 1 +       // ( n  n+1 )
+  *           // ( n*(n+1) )
+  2 /         // ( n*(n+1)/2 )
+  ;

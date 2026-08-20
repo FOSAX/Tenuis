@@ -1,0 +1,7 @@
+build/
+dist/
+*.o
+*.a
+*.so
+*.tenb
+/tmp/

@@ -1,0 +1,2 @@
+// Echo one byte: read from port 0, write to port 0, halt.
+R0 . _
